@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiroki Satomura - アプリ一覧</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Arial", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .header h1 {
+            font-size: 1.8rem;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .header p {
+            color: #666;
+            margin: 0;
+        }
+        .app-card {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border-left: 5px solid #ff9800; /* Happy Noteのテーマカラー */
+        }
+        .app-card.next-app {
+            border-left: 5px solid #4CAF50; /* 次のアプリのテーマカラーに後で変えられます */
+        }
+        .app-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .app-desc {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .app-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .app-links a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .app-links a:hover {
+            text-decoration: underline;
+        }
+        .store-badge {
+            display: inline-block;
+            background-color: #000;
+            color: #fff !important;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none !important;
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ヘッダー（あなたのプロフィール） -->
+    <div class="header">
+        <h1>Hiroki Satomura</h1>
+        <p>個人でiOS/Androidアプリを開発しています。</p>
+        <p>お問い合わせ: satomura0707@gmail.com</p>
+    </div>
+
+    <!-- アプリ1：Happy Note -->
+    <div class="app-card">
+        <h2 class="app-title">Happy Note</h2>
+        <p class="app-desc">1日の終わりに、今日あった「いいこと」を書き留める日記アプリです。</p>
+        <div class="app-links">
+            <!-- パスをフォルダ構成に合わせています -->
+            <a href="./happy-note/privacy.html">プライバシーポリシー</a>
+            <!-- サポートページを分ける場合はリンクを追加、プラポリ兼用の場合は以下を削除 -->
+            <a href="./happy-note/privacy.html#contact">お問い合わせ（サポート）</a>
+        </div>
+        <!-- リリース後にApp StoreのURLを入れます -->
+        <!-- <a href="[App StoreのURL]" class="store-badge">App Store で見る</a> -->
+    </div>
+
+    <!-- アプリ2：次回作（予定地としてコメントアウトしておきます） -->
+    <!--
+    <div class="app-card next-app">
+        <h2 class="app-title">Next App (仮)</h2>
+        <p class="app-desc">現在開発中の新しいアプリです。</p>
+        <div class="app-links">
+            <a href="./next-app/privacy.html">プライバシーポリシー</a>
+        </div>
+    </div>
+    -->
+
+    <!-- フッター -->
+    <div class="footer">
+        &copy; 2026 [開発者名 または 屋号] All rights reserved.
+    </div>
+
+</body>
+</html>
